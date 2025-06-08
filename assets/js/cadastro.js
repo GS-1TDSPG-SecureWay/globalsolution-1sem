@@ -107,7 +107,7 @@ function salvarCadastro() {
         limparFormulario();
 
         // Redireciona para a página de termos
-        window.location.href = "termos.html";
+        window.location.href = "./home/home.html";
     }
 }
 

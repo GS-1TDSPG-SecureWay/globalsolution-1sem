@@ -11,7 +11,6 @@ cards.forEach(card => {
     });
 });
 
-// Fecha ao clicar no X
 closeButtons.forEach(btn => {
     btn.addEventListener('click', () => {
         btn.closest('.modal').style.display = 'none';
@@ -33,3 +32,5 @@ window.addEventListener('keydown', (e) => {
         modals.forEach(modal => modal.style.display = 'none');
     }
 });
+
+
