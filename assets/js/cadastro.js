@@ -98,12 +98,16 @@ function salvarCadastro() {
             telefone: `${ddd} ${telefone}`
         };
 
-        console.log("Dados cadastrados:", dados);
-        alert("Usuário cadastrado com sucesso!");
+        // Salvando no localStorage (como simulação de "registro")
+        localStorage.setItem("usuarioCadastrado", JSON.stringify(dados));
 
+        alert("Usuário cadastrado com sucesso!");
 
         // Limpa os campos
         limparFormulario();
+
+        // Redireciona para a página de termos
+        window.location.href = "termos.html";
     }
 }
 
